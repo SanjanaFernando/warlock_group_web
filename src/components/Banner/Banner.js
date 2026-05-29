@@ -136,7 +136,7 @@ const Banner = () => {
                     {slide.description}
                   </p>
                   <Link
-                    to="/offers"
+                    to="/offer"
                     className="mt-6 inline-flex items-center rounded-full px-3 bg-primeColor md:px-6 md:py-3 font-titleFont text-sm font-semibold text-crispWhite hover:text-lightText transition duration-200 hover:bg-crispWhite/60 focus:outline-none focus:ring-2 focus:ring-primeColor/50 focus:ring-offset-2"
                   >
                     See Offers
