@@ -116,29 +116,35 @@ const Banner = () => {
     <div className="w-full bg-white">
       <Slider {...settings}>
         {bannerSlides.map((slide) => (
-          <Link key={slide.id} to="/offer" className="block">
-            <div className="relative">
-              <Image imgSrc={slide.imgSrc} className="w-full object-cover" />
-              <div className="absolute inset-0 flex items-center">
-                <div className="mx-auto w-full max-w-container px-4 sm:px-6 lg:px-10">
-                  <div className="max-w-xl rounded-2xl  p-6  sm:p-8 lg:p-10">
-                    <p className="font-titleFont text-sm uppercase tracking-[0.35em] text-iceGray/70">
-                      Special Offer
-                    </p>
-                    <h2 className="mt-4 font-titleFont text-2xl font-semibold leading-tight text-crispWhite sm:text-4xl lg:text-5xl">
-                      {slide.title}
-                    </h2>
-                    <p className="mt-4 max-w-md text-sm leading-6 text-crispWhite/60 sm:text-base">
-                      {slide.description}
-                    </p>
-                    <span className="mt-6 inline-flex items-center rounded-full bg-primeColor px-6 py-3 font-titleFont text-sm font-semibold text-crispWhite transition duration-200 hover:bg-black">
-                      See Offers
+          <div key={slide.id} className="relative">
+            <Image imgSrc={slide.imgSrc} className="w-full object-cover" />
+            <div className="absolute inset-0 flex items-center">
+              <div className="mx-auto w-full max-w-container px-4 sm:px-6 lg:px-10">
+                <div className="max-w-xl rounded-2xl p-6 sm:p-8 lg:p-10">
+                  <p className="font-titleFont text-sm uppercase tracking-[0.35em] text-iceGray/70">
+                    <span className="hidden md:inline">Special Offer</span>
+                    <span className="md:hidden block">
+                      Special
+                      <br />
+                      Offer
                     </span>
-                  </div>
+                  </p>
+                  <h2 className="mt-4 font-titleFont hidden md:block text-md font-semibold leading-tight text-crispWhite sm:text-4xl lg:text-5xl">
+                    {slide.title}
+                  </h2>
+                  <p className="mt-4 max-w-md text-sm leading-6 hidden md:block text-crispWhite/60 sm:text-base">
+                    {slide.description}
+                  </p>
+                  <Link
+                    to="/offers"
+                    className="mt-6 inline-flex items-center rounded-full px-3 bg-primeColor md:px-6 md:py-3 font-titleFont text-sm font-semibold text-crispWhite hover:text-lightText transition duration-200 hover:bg-crispWhite/60 focus:outline-none focus:ring-2 focus:ring-primeColor/50 focus:ring-offset-2"
+                  >
+                    See Offers
+                  </Link>
                 </div>
               </div>
             </div>
-          </Link>
+          </div>
         ))}
       </Slider>
     </div>

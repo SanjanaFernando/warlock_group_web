@@ -75,7 +75,7 @@ const Header = () => {
                 >
                   <div className="w-full h-full bg-primeColor p-6">
                     <img
-                      className="w-28 mb-6"
+                      className="w-28 block mx-auto mb-3"
                       src={logoLight}
                       alt="logoLight"
                     />
