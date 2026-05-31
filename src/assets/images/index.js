@@ -2,6 +2,7 @@ import logo from "./WARLOCKLogo.png";
 import logoLight from "./logoLight.png";
 import bannerone from "./banner/bannerone.png";
 import bannertwo from "./banner/bannertwo.png";
+import bannerthree from "./banner/bannerthree.png";
 import bannerImgThree from "./banner/bannerImgThree.webp";
 import saleImgOne from "./sale/saleImgOne.webp";
 import saleImgTwo from "./sale/saleImgTwo.webp";
@@ -36,6 +37,7 @@ export {
   logoLight,
   bannerone,
   bannertwo,
+  bannerthree,
   bannerImgThree,
   saleImgOne,
   saleImgTwo,
