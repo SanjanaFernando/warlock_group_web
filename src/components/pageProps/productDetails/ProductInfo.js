@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../../redux/WARLOCKSlice";
 
@@ -13,7 +14,7 @@ const ProductInfo = ({ productInfo }) => {
       <p className="font-medium text-lg">
         <span className="font-normal">Colors:</span> {productInfo.color}
       </p>
-      <button
+      <motion.button
         onClick={() =>
           dispatch(
             addToCart({
@@ -27,10 +28,12 @@ const ProductInfo = ({ productInfo }) => {
             }),
           )
         }
+        whileHover={{ y: -2, scale: 1.01 }}
+        whileTap={{ scale: 0.98 }}
         className="w-full py-4 bg-primeColor hover:bg-black duration-300 text-white text-lg font-titleFont"
       >
         Add to Cart
-      </button>
+      </motion.button>
       <p className="font-normal text-sm">
         <span className="text-base font-medium"> Categories:</span> Spring
         collection, Streetwear, Women Tags: featured SKU: N/A

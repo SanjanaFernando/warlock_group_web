@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import Slider from "react-slick";
 import Heading from "../Products/Heading";
 import Product from "../Products/Product";
@@ -10,6 +11,28 @@ import {
 } from "../../../assets/images/index";
 import SampleNextArrow from "./SampleNextArrow";
 import SamplePrevArrow from "./SamplePrevArrow";
+
+const containerVariants = {
+  hidden: { opacity: 0, y: 24 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      staggerChildren: 0.12,
+      delayChildren: 0.08,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 24, scale: 0.98 },
+  show: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
 
 const NewArrivals = () => {
   const settings = {
@@ -47,10 +70,18 @@ const NewArrivals = () => {
     ],
   };
   return (
-    <div className="w-full pb-16">
-      <Heading heading="New Arrivals" />
+    <motion.div
+      className="w-full pb-16"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+    >
+      <motion.div variants={itemVariants}>
+        <Heading heading="New Arrivals" />
+      </motion.div>
       <Slider {...settings}>
-        <div className="px-2">
+        <motion.div className="px-2" variants={itemVariants}>
           <Product
             _id="100001"
             img={newArrOne}
@@ -60,8 +91,8 @@ const NewArrivals = () => {
             badge={true}
             des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
           />
-        </div>
-        <div className="px-2">
+        </motion.div>
+        <motion.div className="px-2" variants={itemVariants}>
           <Product
             _id="100002"
             img={newArrTwo}
@@ -71,8 +102,8 @@ const NewArrivals = () => {
             badge={true}
             des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
           />
-        </div>
-        <div className="px-2">
+        </motion.div>
+        <motion.div className="px-2" variants={itemVariants}>
           <Product
             _id="100003"
             img={newArrThree}
@@ -82,8 +113,8 @@ const NewArrivals = () => {
             badge={true}
             des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
           />
-        </div>
-        <div className="px-2">
+        </motion.div>
+        <motion.div className="px-2" variants={itemVariants}>
           <Product
             _id="100004"
             img={newArrFour}
@@ -93,8 +124,8 @@ const NewArrivals = () => {
             badge={false}
             des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
           />
-        </div>
-        <div className="px-2">
+        </motion.div>
+        <motion.div className="px-2" variants={itemVariants}>
           <Product
             _id="100005"
             img={newArrTwo}
@@ -104,9 +135,9 @@ const NewArrivals = () => {
             badge={false}
             des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
           />
-        </div>
+        </motion.div>
       </Slider>
-    </div>
+    </motion.div>
   );
 };
 

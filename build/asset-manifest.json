@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.c0f47565.css",
-    "main.js": "/static/js/main.ca1aa052.js",
-    "static/media/bannerImgTwo.webp": "/static/media/bannerImgTwo.d93152138c5c9da3de58.webp",
+    "main.css": "/static/css/main.c39fd345.css",
+    "main.js": "/static/js/main.6711352d.js",
+    "static/media/bannerthree.png": "/static/media/bannerthree.f2c614a0ad24cc7bded1.png",
+    "static/media/bannerone.png": "/static/media/bannerone.0ac1c2c454e44fe1aec2.png",
+    "static/media/bannertwo.png": "/static/media/bannertwo.3c6661c3c7a219b3390e.png",
+    "static/media/WARLOCKLogo.png": "/static/media/WARLOCKLogo.06cced9d15f9a059cdaf.png",
+    "static/media/logoLight.png": "/static/media/logoLight.06cced9d15f9a059cdaf.png",
     "static/media/bannerImgThree.webp": "/static/media/bannerImgThree.cdd63ff84acf53a73a0d.webp",
     "static/media/saleImgTwo.webp": "/static/media/saleImgTwo.ecb733524e878406c281.webp",
-    "static/media/bannerImgOne.webp": "/static/media/bannerImgOne.cc70f00d1512cb1f97f6.webp",
     "static/media/newArrThree.webp": "/static/media/newArrThree.137dcefaee781098fd8a.webp",
     "static/media/payment.png": "/static/media/payment.3e00cc601c9e7fc1e7d3.png",
     "static/media/productOfTheYear.webp": "/static/media/productOfTheYear.2c30f10b51873bab4630.webp",
@@ -24,11 +27,11 @@
     "static/media/newArrTwo.webp": "/static/media/newArrTwo.bdc7d9372116bdf40cc4.webp",
     "static/media/newArrOne.webp": "/static/media/newArrOne.5982a995e5c312914fe6.webp",
     "index.html": "/index.html",
-    "main.c0f47565.css.map": "/static/css/main.c0f47565.css.map",
-    "main.ca1aa052.js.map": "/static/js/main.ca1aa052.js.map"
+    "main.c39fd345.css.map": "/static/css/main.c39fd345.css.map",
+    "main.6711352d.js.map": "/static/js/main.6711352d.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0f47565.css",
-    "static/js/main.ca1aa052.js"
+    "static/css/main.c39fd345.css",
+    "static/js/main.6711352d.js"
   ]
 }
