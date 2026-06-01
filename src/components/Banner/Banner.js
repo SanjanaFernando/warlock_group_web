@@ -156,8 +156,8 @@ const Banner = () => {
               type="button"
               className={`h-2.5 w-2.5 rounded-full border transition duration-200 ${
                 i === activeSlide
-                  ? "border-gray-900 bg-gray-900"
-                  : "border-gray-300 bg-transparent opacity-70"
+                  ? "border-white bg-white"
+                  : "border-gray-400 bg-transparent opacity-70"
               }`}
               aria-label={`Go to slide ${i + 1}`}
             />
@@ -198,9 +198,9 @@ const Banner = () => {
             </div>
           ))}
         </Slider>
-        <div className="absolute bottom-0 left-1/2 z-20 flex max-w-[1920px] w-full -translate-x-1/2 items-center md:inset-0 md:translate-x-0">
+        <div className="absolute bottom-4 left-1/2 z-20 flex max-w-[1920px] w-full -translate-x-1/2 items-center md:inset-0 md:translate-x-0">
           <div className="mx-auto w-full max-w-container px-4 sm:px-6 lg:px-10">
-            <div className="md:max-w-[250px] ml-0 md:ml-10 lg:max-w-[300px] p-4 lg:ml-16 xl:ml-16 2xl:ml-0 xl:max-w-[400px] rounded-2xl sm:p-4 lg:p-4">
+            <div className="md:max-w-[250px] ml-0  md:ml-10 lg:max-w-[300px] p-4 lg:ml-16 xl:ml-16 2xl:ml-0 xl:max-w-[400px] rounded-2xl sm:p-4 lg:p-4">
               <AnimatePresence mode="wait" initial={false}>
                 <motion.div
                   key={bannerSlides[activeSlide].id}
@@ -231,7 +231,7 @@ const Banner = () => {
                   <motion.div variants={lineVariants}>
                     <Link
                       to="/offer"
-                      className="group relative mt-4 inline-flex items-center overflow-hidden rounded-full px-3 md:px-6 md:py-3 font-titleFont text-sm font-semibold text-crispWhite transition duration-300 ease-out hover:scale-105 hover:text-crispWhite focus:outline-none focus:ring-2 focus:ring-primeColor/50 focus:ring-offset-2 lg:mt-6"
+                      className="group relative md:mt-4 inline-flex -translate-x-1/2 md:translate-x-0 left-1/2 items-center md:left-0 overflow-hidden rounded-full py-1  px-3 md:px-6 md:py-3 font-titleFont text-sm font-semibold text-crispWhite transition duration-300 ease-out hover:scale-105 hover:text-crispWhite focus:outline-none focus:ring-2 focus:ring-primeColor/50 focus:ring-offset-2 lg:mt-6"
                     >
                       <span
                         aria-hidden="true"
