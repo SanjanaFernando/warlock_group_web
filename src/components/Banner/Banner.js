@@ -170,11 +170,11 @@ const Banner = () => {
     <div className="w-full bg-white">
       <div className="relative">
         <div
-          className="absolute left-1 top-[2px] bottom-[8px] z-20 hidden w-10 overflow-hidden md:block md:w-[60px] lg:left-2 xl:left-3 lg:w-[100px] xl:w-[120px]"
+          className="absolute left-1 top-[2px] bottom-[8px] z-20  w-[50px] overflow-hidden md:w-[60px] lg:left-2 xl:left-3 lg:w-[100px] xl:w-[120px]"
           aria-hidden="true"
         >
           <motion.div
-            className="flex h-full flex-col items-center gap-8 py-6 will-change-transform"
+            className="flex h-full flex-col items-center gap-4 xl:gap-8 py-6 will-change-transform"
             animate={{ y: ["0%", "-50%"] }}
             transition={{ duration: 10, ease: "linear", repeat: Infinity }}
           >
@@ -183,7 +183,7 @@ const Banner = () => {
                 key={`${item.id}-${index}`}
                 src={item.src}
                 alt=""
-                className="h-auto w-7 flex-shrink-0 object-contain opacity-70 sm:w-8 md:w-[60px]  lg:w-[100px] xl:w-[120px]"
+                className="h-auto w-[50px] flex-shrink-0 object-contain opacity-70 sm:w-[60px] md:w-[60px]  lg:w-[100px] xl:w-[120px]"
               />
             ))}
           </motion.div>
